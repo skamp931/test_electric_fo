@@ -22,7 +22,7 @@ if add_radio =="電気工学_基本":
         ampea_1 = st.number_input("電流I",5.0)
         #volt_1 = st.empty()
         volt_1 = orm_1 * ampea_1
-        st.metrics(f"　電圧Vは{volt_1:,.3f}Vです")
+        st.metric(label="電圧V",value=f"{volt_1:,.3f}V")
         
     with col2:
         st.write('電流I（アンペア）を求める')
